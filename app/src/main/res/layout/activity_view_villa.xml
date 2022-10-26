@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F8E9"
+    tools:context=".ViewVilla">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="668dp"
+        android:layout_height="796dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/design1"
+        tools:layout_editor_absoluteY="-15dp"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="164dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/villa6" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="177dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/villa3" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="231dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/villa2" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="301dp"
+        android:layout_height="603dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="316dp"
+        android:rotation="-257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="155dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/villa5" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="174dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/villa1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#049E05"
+        android:foregroundTint="#FFFFFF"
+        app:itemIconTint="@color/white"
+        app:itemRippleColor="#FFFFFF"
+        app:itemTextColor="#FBFBFB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="166dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:background="#7BEC72"
+        android:elevation="@dimen/cardview_default_radius"
+        android:text="Check Availability"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
