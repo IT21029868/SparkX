@@ -79,6 +79,14 @@ public class AddToCart extends AppCompatActivity {
         String count = etcount.getText().toString();
         String chef = etchef.getText().toString();
 
+        boolean check =validateinfor(name,email,phone,date,night,count,chef);
+
+        if(check==true){
+            Toast.makeText(this,"Added to Travel Cart",Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this,"Please the check data again", Toast.LENGTH_SHORT).show();
+        }
         HotelBookings hotel1 = new HotelBookings(name,email,phone,
                 date,night,count,chef);
 
@@ -90,9 +98,62 @@ public class AddToCart extends AppCompatActivity {
         etnight.setText("");
         etcount.setText("");
         etchef.setText("");
-        Toast.makeText(this,"Added to Travel Cart",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,"Added to Travel Cart",Toast.LENGTH_SHORT).show();
 
 
+    }
+
+    private Boolean validateinfor(String name, String email, String phone, String date, String night, String count, String chef) {
+
+        if(name.length()==0){
+            etname.requestFocus();
+            etname.setError("Field cannot be empty");
+            return false;
+        }
+        else if(!name.matches("[a-zA-Z]+")){
+            etname.requestFocus();
+            etname.setError("Enter only alphabetical character");
+            return false;
+        }
+        else if(email.length()==0){
+            etemail.requestFocus();
+            etemail.setError("Field cannot be empty");
+            return false;
+        }
+        else if(!email.matches("[a-zA-Z]+@[a-z]+\\.+[a-z]+")){
+            etemail.requestFocus();
+            etemail.setError("Enter valid email");
+            return false;
+        }
+        else if(phone.length()==0){
+            etphone.requestFocus();
+            etphone.setError("Field cannot be empty");
+        }
+        else if(!phone.matches("^[+][0-9]{10,13}$")){
+            etphone.requestFocus();
+            etphone.setError("Correct Format: +94xxxxxxxxx");
+            return false;
+        }
+        else if(date.length()==0){
+            etdate.requestFocus();
+            etdate.setError("Field cannot be empty");
+        }
+        else if(night.length()==0){
+            etnight.requestFocus();
+            etnight.setError("Field cannot be empty");
+        }
+        else if(count.length()==0){
+            etcount.requestFocus();
+            etcount.setError("Field cannot be empty");
+        }
+        else if(chef.length()==0){
+            etchef.requestFocus();
+            etchef.setError("Field cannot be empty");
+        }
+        else{
+            return true;
+        }
+        return null;
     }
 
 }
