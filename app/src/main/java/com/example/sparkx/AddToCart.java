@@ -17,6 +17,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class AddToCart extends AppCompatActivity {
 
+    private Button button50;
+
     EditText etname, etemail, etphone, etdate, etnight, etcount, etchef;
     Button btnsubmit;
 
@@ -56,16 +58,28 @@ public class AddToCart extends AppCompatActivity {
         getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
 
 
-        button34 = findViewById(R.id.button34);
-        button34.setOnClickListener(new View.OnClickListener() {
+        button50 = findViewById(R.id.button50);
+        button50.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFindAStay();
             }
         });
+
+        button34 = findViewById(R.id.button34);
+        button34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTravelCart();
+            }
+        });
     }
     public void openFindAStay(){
         Intent intent = new Intent(this, FindAStay.class);
+        startActivity(intent);
+    }
+    public void openTravelCart(){
+        Intent intent = new Intent(this, TravelCart.class);
         startActivity(intent);
     }
 
@@ -110,30 +124,30 @@ public class AddToCart extends AppCompatActivity {
             etname.setError("Field cannot be empty");
             return false;
         }
-        else if(!name.matches("[a-zA-Z]+")){
+        /*else if(!name.matches("[a-zA-Z]+")){
             etname.requestFocus();
             etname.setError("Enter only alphabetical character");
             return false;
-        }
+        }*/
         else if(email.length()==0){
             etemail.requestFocus();
             etemail.setError("Field cannot be empty");
             return false;
         }
-        else if(!email.matches("[a-zA-Z]+@[a-z]+\\.+[a-z]+")){
+       /* else if(!email.matches("[a-zA-Z]+@[a-z]+\\.+[a-z]+")){
             etemail.requestFocus();
             etemail.setError("Enter valid email");
             return false;
-        }
+        }*/
         else if(phone.length()==0){
             etphone.requestFocus();
             etphone.setError("Field cannot be empty");
         }
-        else if(!phone.matches("^[+][0-9]{10,13}$")){
+        /*else if(!phone.matches("^[+][0-9]{10,13}$")){
             etphone.requestFocus();
             etphone.setError("Correct Format: +94xxxxxxxxx");
             return false;
-        }
+        }*/
         else if(date.length()==0){
             etdate.requestFocus();
             etdate.setError("Field cannot be empty");

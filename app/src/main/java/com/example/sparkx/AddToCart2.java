@@ -17,6 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class AddToCart2 extends AppCompatActivity {
 
     private Button button36;
+    private Button button60;
 
     EditText etname2, etemail2, etdate2, etdays, etdestination;
     Button btnsubmit2;
@@ -57,10 +58,23 @@ public class AddToCart2 extends AppCompatActivity {
                 openBookAGuide();
             }
         });
+
+        button60 = findViewById(R.id.button60);
+        button60.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openTravelCart();
+            }
+        });
     }
 
     public void openBookAGuide(){
         Intent intent = new Intent(this, BookAGuide.class);
+        startActivity(intent);
+    }
+
+    public void openTravelCart(){
+        Intent intent = new Intent(this, TravelCart.class);
         startActivity(intent);
     }
     private void insertGuideBookingData(){
@@ -99,21 +113,21 @@ public class AddToCart2 extends AppCompatActivity {
             etname2.setError("Field cannot be empty");
             return false;
         }
-        else if(!name2.matches("[a-zA-Z]+")){
+        /*else if(!name2.matches("[a-zA-Z]+")){
             etname2.requestFocus();
             etname2.setError("Enter only alphabetical character");
             return false;
-        }
+        }*/
         else if(email2.length()==0){
             etemail2.requestFocus();
             etemail2.setError("Field cannot be empty");
             return false;
         }
-        else if(!email2.matches("[a-zA-Z]+@[a-z]+\\.+[a-z]+")){
+        /*else if(!email2.matches("[a-zA-Z]+@[a-z]+\\.+[a-z]+")){
             etemail2.requestFocus();
             etemail2.setError("Enter valid email");
             return false;
-        }
+        }*/
         else if(date2.length()==0){
             etdate2.requestFocus();
             etdate2.setError("Field cannot be empty");

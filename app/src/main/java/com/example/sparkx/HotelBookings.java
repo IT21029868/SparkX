@@ -3,6 +3,8 @@ package com.example.sparkx;
 public class HotelBookings {
     String name,email,phone,date,night,count,chef;
 
+    public HotelBookings(){}
+
     public HotelBookings(String name, String email, String phone, String date, String night, String count, String chef) {
         this.name = name;
         this.email = email;

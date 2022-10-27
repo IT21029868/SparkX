@@ -4,6 +4,8 @@ public class GuideBookings {
 
     String name2,email2,date2,day,dest;
 
+    public GuideBookings(){}
+
     public GuideBookings(String name2, String email2, String date2, String day, String dest) {
         this.name2 = name2;
         this.email2 = email2;

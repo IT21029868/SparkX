@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/tvName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="#070404"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+
+    android:id="@+id/tvEmail1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Email:"
+    android:textColor="#070404"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"/>
+
+    <TextView
+
+        android:id="@+id/tvDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Date:"
+        android:textColor="#070404"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+
+        android:id="@+id/tvDays1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Days:"
+        android:textColor="#070404"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+
+        android:id="@+id/tvDest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destinations:"
+        android:textColor="#070404"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
