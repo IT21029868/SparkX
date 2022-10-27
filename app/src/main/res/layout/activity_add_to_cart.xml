@@ -29,7 +29,7 @@
         android:id="@+id/imageView18"
         android:layout_width="368dp"
         android:layout_height="383dp"
-        android:layout_marginBottom="364dp"
+        android:layout_marginBottom="368dp"
         android:elevation="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
         android:id="@+id/button34"
         android:layout_width="139dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:background="#98ED66"
         android:text="Find Another Stay"
         android:textColor="#070606"
@@ -94,21 +94,6 @@
         app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/email1"
-        android:layout_width="312dp"
-        android:layout_height="37dp"
-        android:layout_marginBottom="372dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Personal Email"
-        android:textColor="#474444"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
@@ -121,21 +106,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/number1"
-        android:layout_width="251dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="332dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=" Personal Number"
-        android:textColor="#474444"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.968"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -152,21 +122,6 @@
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/date1"
-        android:layout_width="259dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="272dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="dd/mm/yyyy"
-        android:textColor="#474444"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView33"
         android:layout_width="wrap_content"
@@ -181,21 +136,6 @@
         app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/night1"
-        android:layout_width="240dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="232dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="days"
-        android:textColor="#474444"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
@@ -208,21 +148,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/people1"
-        android:layout_width="240dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="192dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="count"
-        android:textColor="#474444"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -246,6 +171,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="200dp"
         android:text="Number of People:"
+        android:inputType="number"
         android:textColor="#020202"
         android:textSize="15sp"
         android:textStyle="bold"
@@ -266,6 +192,81 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/email1"
+        android:layout_width="313dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="288dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Personal Email"
+        android:textColor="#5E5858"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="330dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Personal Contact Number"
+        android:textColor="#686565"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="272dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Check-in Date"
+        android:textColor="#605C5C"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nights1"
+        android:layout_width="239dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="232dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Count of nights "
+        android:textColor="#4A4848"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/people1"
+        android:layout_width="248dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="192dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Count of people"
+        android:textColor="#4A4848"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
