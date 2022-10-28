@@ -2,11 +2,12 @@ package com.example.sparkx;
 
 public class GuideBookings {
 
-    String name2,email2,date2,day,dest;
+    String id,name2,email2,date2,day,dest;
 
     public GuideBookings(){}
 
-    public GuideBookings(String name2, String email2, String date2, String day, String dest) {
+    public GuideBookings(String id,String name2, String email2, String date2, String day, String dest) {
+        this.id= id;
         this.name2 = name2;
         this.email2 = email2;
         this.date2 = date2;
@@ -52,5 +53,13 @@ public class GuideBookings {
 
     public void setDest(String dest) {
         this.dest = dest;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

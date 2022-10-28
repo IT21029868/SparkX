@@ -37,7 +37,7 @@ public class AddToCart2 extends AppCompatActivity {
         etdestination = findViewById(R.id.destination1);
         btnsubmit2= findViewById(R.id.submit2);
 
-        bookingDB2 = FirebaseDatabase.getInstance().getReference().child("GuideBookings");
+        bookingDB2 = FirebaseDatabase.getInstance().getReference("GuideBookings");
 
         btnsubmit2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +86,7 @@ public class AddToCart2 extends AppCompatActivity {
         String dest = etdestination.getText().toString();
 
 
+
         boolean check =validateinfor(name2,email2,date2,day,dest);
 
         if(check==true){
@@ -94,9 +95,11 @@ public class AddToCart2 extends AppCompatActivity {
         else{
             Toast.makeText(this,"Please the check data again", Toast.LENGTH_SHORT).show();
         }
-        GuideBookings guide1 = new GuideBookings(name2,email2,date2,day,dest);
 
-        bookingDB2.push().setValue(guide1);
+        String id = bookingDB2.push().getKey();
+        GuideBookings guide1 = new GuideBookings(id,name2,email2,date2,day,dest);
+        assert  id != null;
+        bookingDB2.child(id).setValue(guide1);
         etname2.setText("");
         etemail2.setText("");
         etdate2.setText("");

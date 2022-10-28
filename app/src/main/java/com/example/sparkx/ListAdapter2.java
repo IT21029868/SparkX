@@ -35,7 +35,7 @@ public class ListAdapter2 extends ArrayAdapter {
         TextView tvEmail1 = listItemView.findViewById(R.id.tvEmail1);
         TextView tvDate1 = listItemView.findViewById(R.id.tvDate1);
         TextView tvDays1 = listItemView.findViewById(R.id.tvDays1);
-        TextView tvDest1= listItemView.findViewById(R.id.tvDate1);
+        TextView tvDest1= listItemView.findViewById(R.id.tvDest1);
 
         GuideBookings guides = guideBookingsList.get(position);
 

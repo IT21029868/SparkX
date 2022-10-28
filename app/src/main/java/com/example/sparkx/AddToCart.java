@@ -93,6 +93,8 @@ public class AddToCart extends AppCompatActivity {
         String count = etcount.getText().toString();
         String chef = etchef.getText().toString();
 
+        String id = bookingDB.push().getKey();
+
         boolean check =validateinfor(name,email,phone,date,night,count,chef);
 
         if(check==true){
@@ -101,10 +103,9 @@ public class AddToCart extends AppCompatActivity {
         else{
             Toast.makeText(this,"Please the check data again", Toast.LENGTH_SHORT).show();
         }
-        HotelBookings hotel1 = new HotelBookings(name,email,phone,
-                date,night,count,chef);
-
-        bookingDB.push().setValue(hotel1);
+        HotelBookings hotel1 = new HotelBookings(id,name,email,phone,date,night,count,chef);
+        assert id != null;
+        bookingDB.child(id).setValue(hotel1);
         etname.setText("");
         etemail.setText("");
         etphone.setText("");

@@ -1,11 +1,12 @@
 package com.example.sparkx;
 
 public class HotelBookings {
-    String name,email,phone,date,night,count,chef;
+    String id,name,email,phone,date,night,count,chef;
 
     public HotelBookings(){}
 
-    public HotelBookings(String name, String email, String phone, String date, String night, String count, String chef) {
+    public HotelBookings(String id,String name, String email, String phone, String date, String night, String count, String chef) {
+        this.id = id;
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -69,5 +70,13 @@ public class HotelBookings {
 
     public void setChef(String chef) {
         this.chef = chef;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
