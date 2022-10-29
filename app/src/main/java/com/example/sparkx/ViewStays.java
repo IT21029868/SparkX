@@ -70,7 +70,7 @@ public class ViewStays extends AppCompatActivity {
             }
         });
 
-        getSupportActionBar().setTitle("View Stays");
+        getSupportActionBar().setTitle("View Guides");
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.actionbar)));
 
         //set itemLong Listener on listview item

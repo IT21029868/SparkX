@@ -13,6 +13,7 @@ public class Home extends AppCompatActivity {
 
     private Button button37;
     private Button button41;
+    private Button button43;
 
     @SuppressLint("RestrictedApi")
     @Override
@@ -39,6 +40,14 @@ public class Home extends AppCompatActivity {
                 openBookAGuide();
             }
         });
+
+        button43 = findViewById(R.id.button43);
+        button43.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openWelcomePage();
+            }
+        });
     }
 
     public void openSelectDestination(){
@@ -47,6 +56,10 @@ public class Home extends AppCompatActivity {
     }
     public void openBookAGuide(){
         Intent intent = new Intent(this, BookAGuide.class);
+        startActivity(intent);
+    }
+    public void openWelcomePage(){
+        Intent intent = new Intent(this, WelcomePage.class);
         startActivity(intent);
     }
 }
