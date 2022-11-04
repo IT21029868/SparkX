@@ -106,7 +106,7 @@ public class ViewStays extends AppCompatActivity {
         Button update1 = mDialogView.findViewById(R.id.update1);
         Button delete1 = mDialogView.findViewById(R.id.delete1);
 
-        mDialog.setTitle("Updating" + name +"record");
+        mDialog.setTitle("Updating " + name +" record");
         final AlertDialog alertDialog = mDialog.create();
         alertDialog.show();
 
